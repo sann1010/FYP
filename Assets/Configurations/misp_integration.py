@@ -26,7 +26,6 @@ def transform_event(event):
     transformed = {
         "event_id": event.get("Event", {}).get("id", ""),
         "event_description": event.get("Event", {}).get("info", ""),
-        "event_timestamp": event.get("Event", {}).get("timestamp", ""),
         "event_date": event.get("Event", {}).get("date", ""),
         "threat_level_id": event.get("Event", {}).get("threat_level_id", ""),
         "attributes": {}
